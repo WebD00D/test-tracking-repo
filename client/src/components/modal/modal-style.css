@@ -1,0 +1,29 @@
+.modal-wrapper {
+  position: fixed;
+  background-color: rgba(01, 01, 01, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-body {
+  position: relative;
+  border-radius: 12px;
+  padding: 32px;
+  min-height: 320px;
+  min-width: 320px;
+  background-color: #fff;
+  box-shadow: -1px 1px 35px 0px rgba(0, 0, 0, 0.08);
+}
+
+.close {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  cursor: pointer;
+}

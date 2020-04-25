@@ -1,0 +1,17 @@
+@media (max-width: 1100px) {
+    #squarelogo {
+        width: 70%;
+        height: auto;
+        align-content: center;
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 1101px) {
+    #squarelogo {
+        width: 30%;
+        height: auto;
+        align-content: center;
+        padding-top: 60px;
+    }
+}

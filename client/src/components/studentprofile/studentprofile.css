@@ -1,0 +1,19 @@
+.content {
+	color: white;
+	background-color: #336633;
+	font-family: "Pacifico", cursive;
+	border: 2px;
+	border-style: solid;
+	border-color: #336633;
+	border-width: 50px;
+}
+
+.studentInfo {
+	font-size: 20px;
+}
+.sendButton {
+	color: #336633;
+	background-color: #ffffcc;
+	border: 2px solid #4caf50;
+	font-family: "Pacifico", cursive;
+}

@@ -1,0 +1,14 @@
+GET http://localhost:3000/students
+
+###
+GET http://localhost:3000/
+
+###
+
+POST http://localhost:3000/
+
+###
+
+Fetch http://localhost
+
+

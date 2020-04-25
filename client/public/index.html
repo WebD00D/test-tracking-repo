@@ -1,0 +1,79 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="theme-color" content="#000000" />
+		<!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+		<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<!-- Materialize CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"
+		/>
+		<!-- Materialize Icons -->
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+
+		<!-- Materialize JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+		<!-- jQuery script -->
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".modal").modal();
+			});
+		</script>
+		<script>
+			$(document).ready(function () {
+				$(".collapsible").collapsible();
+			});
+		</script>
+
+		<title>Roll Call</title>
+	</head>
+
+	<body>
+		<noscript>
+			You need to enable JavaScript to run this app.
+		</noscript>
+		<div id="root"></div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+		<script src="./main.js"></script>
+
+		<script src="/socket.io/socket.io.js"></script>
+		<script>
+			var socket = io();
+		</script>
+		<!-- <script>
+		$(function () {
+			var socket = io();
+			$('form').submit(function (e) {
+				e.preventDefault(); // prevents page reloading
+				socket.emit('chat message', $('#m').val());
+				$('#m').val('');
+				return false;
+			});
+
+			socket.on('chat message', function (msg) {
+				$('#messages').append($('<li>').text(msg));
+			});
+
+		});
+	</script> -->
+	</body>
+</html>

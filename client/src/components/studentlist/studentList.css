@@ -1,0 +1,59 @@
+#classComponent {
+  padding: 20px;
+}
+
+#studentCollection {
+  background: #ffffcc;
+}
+
+.studentComponent {
+  font-size: 2rem;
+}
+
+i.icon-creamyyy {
+  color: #ffffcc;
+}
+
+.studentname {
+  color: white;
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+}
+
+.studentheader {
+  color: white;
+  font-family: "Pacifico", cursive;
+}
+
+#modal1 {
+  background-color: #ffffcc;
+}
+
+.modal-footer {
+  background-color: #336633;
+}
+
+.classHeader {
+  color: #ffffcc;
+  font-family: "Pacifico", cursive;
+}
+
+.select-box {
+}
+
+.teacher-option {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: 0.2s ease;
+}
+
+.teacher-option:hover {
+  background-color: #f1f1f1;
+}
+
+.teacher-option.active {
+  background-color: #252525;
+  color: #fff;
+}

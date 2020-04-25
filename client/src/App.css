@@ -1,0 +1,11 @@
+html,
+body {
+	background-image: url("/blackboardbg-min.jpg");
+	background-position: center;
+	background-size: cover;
+	background-color: #336633;
+}
+
+.contentdiv {
+	min-height: calc(100vh - 50px);
+}

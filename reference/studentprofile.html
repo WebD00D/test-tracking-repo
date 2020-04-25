@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roll Call</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        nav {
+            background-image: url("./branding/blackboardbg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+            text-align: center;
+            height: auto;
+        }
+
+        #navlogo {
+            align-content: center;
+            width: 80%;
+            height: auto;
+            align-content: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        #sidebarImg {
+            color:
+        }
+
+        .input-field {
+            padding: 30px;
+        }
+
+        .user-view {
+            background-color: #336633;
+        }
+
+        .viewStudentBtn {
+            font-size: 18px;
+            align-content: right;
+        }
+
+        .sendStudentBtn {
+            font-size: 18px;
+            align-content: right;
+        }
+
+        #chatwindow {
+            border-color: black;
+            border-width: 2px;
+        }
+
+        .sidenav {
+            background-color: #ffffcc;
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <img src="./branding/rollcalllogohorizontal.png" alt="Roll Call" id="navlogo"></img>
+        </div>
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <a href="#name"><span class="white-text name">{First Name} {Last Name}</span></a>
+                <a href="#email"><span class="white-text email">email@email.com</span></a>
+            </div>
+        </li>
+        <div class="input-field col s12">
+            <select>
+
+                <!-- we need a for loop to cycle through all possible teachers in the database to populate this dropdown -->
+
+                <option value="" disabled selected>Select a teacher:</option>
+                <option value="1">Teacher 1</option>
+                <option value="2">Teacher 2</option>
+                <option value="3">Teacher 3</option>
+            </select>
+        </div>
+        <div class="" id="chatwindow">
+
+        </div>
+    </ul>
+
+    <div class="col s12" id="studentProfileComponent">
+        <div class="row">
+            <div class="col s6">
+                <h4 class="header" id="studentProfileTitle">{Student's Name}</h4>
+            </div>
+            <div class="col s3"><a href="#" class="classBtn"><h4>Back to class</h4></a></div>
+            <div class="col s3">
+                <h4><a href="#" data-target="slide-out" class="sidenav-trigger">Send
+                            Student</a></h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <ul class="collection with-header" id="studentDetails">
+                <li class="collection-header">
+                    <h4>Details</h4>
+                </li>
+                <div class="row">
+                    <li class="collection-item s12 detailBox">
+                        <div class="col s6">Name: </div>
+                        <div class="col s3" id="firstname">Aydhen</div>
+                        <div class="col s3" id="lastname">Asimov</div>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="collection-item s12 detailBox">
+                        <div class="col s6">Birthday: </div>
+                        <div class="col s6" id="birthday">01/01/2016</div>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="collection-item s12 detailBox">
+                        <div class="col s6">Parent: </div>
+                        <div class="col s3" id="parentfirstname">Allison</div>
+                        <div class="col s3" id="parentlastname">Asimov</div>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="collection-item s12 detailBox">
+                        <div class="col s6">Parent's phone: </div>
+                        <div class="col s6" id="parentphone">804-567-0001</div>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="collection-item s12 detailBox">
+                        <div class="col s6">Current caregiver: </div>
+                        <div class="col s6" id="caregiver">Sims</div>
+                    </li>
+                </div>
+                <div class="row">
+                    <li class="collection-item s12 detailBox">
+                        <div class="col s6">Care notes: </div>
+                        <div class="col s6" id="carenotes">Gluten free</div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery cdn -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Materialize jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+
+        // get teachers' names from database
+        // instance.getSelectedValues();
+    </script>
+</body>
+
+</html>

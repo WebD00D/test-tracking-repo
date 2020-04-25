@@ -1,0 +1,47 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "Mern Demo",
+  "homepage": "./",
+  "main": "server.js",
+  "scripts": {
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
+  },
+  "dependencies": {
+    "connect-ensure-login": "^0.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "http": "0.0.1-security",
+    "firebase": "^7.14.2",
+    "if-env": "^1.0.4",
+    "is-empty": "^1.2.0",
+    "jade": "^1.11.0",
+    "materialize-css": "^1.0.0-rc.2",
+    "mini-create-react-context": "^0.4.0",
+    "mob": "0.0.9",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "moment": "^2.24.0",
+    "mongoose": "^5.9.10",
+    "passport": "^0.4.1",
+    "passport-local-mongoose": "^6.0.1",
+    "react": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "socket.io": "^2.3.0",
+    "styled-components": "^5.1.0",
+    "validator": "^13.0.0"
+  }
+}

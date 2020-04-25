@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roll Call</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        nav {
+            background-image: url("./branding/blackboardbg.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: top;
+            text-align: center;
+            height: auto;
+        }
+
+        #navlogo {
+            align-content: center;
+            width: 80%;
+            height: auto;
+            align-content: center;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        #sidebarImg {
+            color:
+        }
+
+        .input-field {
+            padding: 30px;
+        }
+
+        .user-view {
+            background-color: #336633;
+        }
+
+        #classComponent {
+            padding: 40px;
+        }
+
+        #studentCollection {
+            padding-right: 40px;
+            padding-left: 40px;
+        }
+
+        .studentComponent {
+            font-size: 2rem;
+        }
+
+        .viewStudentBtn {
+            font-size: 18px;
+            align-content: right;
+        }
+
+        .sendStudentBtn {
+            font-size: 18px;
+            align-content: right;
+        }
+
+        #chatwindow {
+            border-color: black;
+            border-width: 2px;
+        }
+
+        .sidenav {
+            background-color: #ffffcc;
+        }
+
+        ;
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div className="nav-wrapper">
+            <img src="./branding/rollcalllogohorizontal.png" alt="Roll Call" id="navlogo"></img>
+        </div>
+    </nav>
+
+    <ul id="slide-out" className="sidenav">
+        <li>
+            <div class="user-view">
+                <a href="#name"><span className="white-text name">{First Name} {Last Name}</span></a>
+                <a href="#email"><span className="white-text email">email@email.com</span></a>
+            </div>
+        </li>
+        <div className="input-field col s12">
+            <select>
+
+                <!-- we need a for loop to cycle through all possible teachers in the database to populate this dropdown -->
+
+                <option value="" disabled selected>Select a teacher:</option>
+                <option value="1">Teacher 1 in html</option>
+                <option value="2">Teacher 2</option>
+                <option value="3">Teacher 3</option>
+            </select>
+        </div>
+        <div className="" id="chatwindow">
+
+        </div>
+    </ul>
+
+
+    <div className="col s12 m7" id="classComponent">
+        <div className="row">
+            <div className="col s10">
+                <h4 className="header" id="classcomptitle">{Teacher's Name}'s Class</h4>
+            </div>
+            <div className="col s2">
+                <h4><a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">Send
+                            Class</i></a></h4>
+            </div>
+        </div>
+    </div>
+
+    <ul className="collection with-header" id="studentCollection">
+        <li className="collection-header">
+            <h4>Students</h4>
+        </li>
+        <div className="row">
+            <li className="collection-item s12 studentComponent">
+                <div className="col s6">Alvin</div>
+                <div className="col s3"><a href="#" className="viewStudentBtn"><i className="material-icons">View
+                            Details </i></a></div>
+                <div className="col s3"><a href="#" data-target="slide-out" className="sidenav-trigger"><i
+                    className="material-icons sendStudentBtn">Send Student </i></a></div>
+            </li>
+        </div>
+        <div className="row">
+            <li className="collection-item s12 studentComponent">
+                <div className="col s6">Alvin</div>
+                <div className="col s3"><a href="#" className="viewStudentBtn"><i className="material-icons">View
+                            Details </i></a></div>
+                <div className="col s3"><a href="#" data-target="slide-out" className="sidenav-trigger"><i
+                    className="material-icons sendStudentBtn">Send Student </i></a></div>
+            </li>
+        </div>
+        <div className="row">
+            <li className="collection-item s12 studentComponent">
+                <div className="col s6">Alvin</div>
+                <div className="col s3"><a href="#" className="viewStudentBtn"><i className="material-icons">View
+                            Details </i></a></div>
+                <div className="col s3"><a href="#" data-target="slide-out" className="sidenav-trigger"><i
+                            class="material-icons sendStudentBtn">Send Student </i></a></div>
+            </li>
+        </div>
+        <div className="row">
+            <li className="collection-item s12 studentComponent">
+                <div className="col s6">Alvin</div>
+                <div className="col s3"><a href="#" className="viewStudentBtn"><i className="material-icons">View
+                            Details </i></a></div>
+                <div className="col s3"><a href="#" data-target="slide-out" className="sidenav-trigger"><i
+                    className="material-icons sendStudentBtn">Send Student </i></a></div>
+            </li>
+        </div>
+        <div className="row">
+            <li className="collection-item s12 studentComponent">
+                <div className="col s6">Alvin</div>
+                <div className="col s3"><a href="#" className="viewStudentBtn"><i className="material-icons">View
+                            Details </i></a></div>
+                <div className="col s3"><a href="#" data-target="slide-out" className="sidenav-trigger"><i
+                    className="material-icons sendStudentBtn">Send Student </i></a></div>
+            </li>
+        </div>
+        <div className="row">
+            <li className="collection-item s12 studentComponent">
+                <div className="col s6">Alvin</div>
+                <div className="col s3"><a href="#" className="viewStudentBtn"><i className="material-icons">View
+                            Details </i></a></div>
+                <div className="col s3"><a href="#" data-target="slide-out" className="sidenav-trigger"><i
+                    className="material-icons sendStudentBtn">Send Student </i></a></div>
+            </li>
+        </div>
+        <div className="row">
+            <li className="collection-item s12 studentComponent">
+                <div className="col s6">Alvin</div>
+                <div className="col s3"><a href="#" className="viewStudentBtn"><i className="material-icons">View
+                            Details </i></a></div>
+                <div className="col s3"><a href="#" data-target="slide-out" className="sidenav-trigger"><i
+                    className="material-icons sendStudentBtn">Send Student </i></a></div>
+            </li>
+        </div>
+    </ul>
+
+    <!-- jQuery cdn -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <!-- Materialize jQuery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+
+        // get teachers' names from database
+        // instance.getSelectedValues();
+    </script>
+</body>
+
+</html>

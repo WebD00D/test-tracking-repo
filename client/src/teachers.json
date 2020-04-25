@@ -1,0 +1,26 @@
+[
+	{
+		"username": "MrSims",
+		"caregiverlastname": "Sims",
+		"caregiverfirstname": "John",
+		"caregiverlocation": "Red Room",
+		"caregiveremail": "josi3006@hotmail.com",
+		"caregiverpassword": "$2b$09$XcpuRKBEpEmPWJ2r6w1QA.qxCThDGP1LemH9TtpNo.M8eAvsaIDDe"
+	},
+	{
+		"username": "MsUltra",
+		"caregiverlastname": "White",
+	    "caregiverfirstname": "Mary Kate",
+		"caregiverlocation": "Yellow Room",
+		"caregiveremail": "mkUltra@email.com",
+		"caregiverpassword": "$2b$09$8B7zTunr.6iRtpb.nIXju.3G2SJjJ0IPLCo988DxygHvNtN4Grw/W"
+	},
+	{
+"username": "ZachSadMan",
+	    "caregiverlastname": "Sadovszky",
+	    "caregiverfirstname": "Zach",
+		"caregiverlocation": "Green Room",
+		"caregiveremail": "zach@email.com",
+		"caregiverpassword": "$2b$09$OgzTuV5p.Z5DeYd.YKwTauHn0XWmft/KelpUV0e9J/O4JifhRsKB2"
+	}
+]
