@@ -34,7 +34,7 @@
     "mob": "0.0.9",
     "mobx": "^5.15.4",
     "mobx-react": "^6.2.2",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "mongoose": "^5.9.10",
     "passport": "^0.4.1",
     "passport-local-mongoose": "^6.0.1",
